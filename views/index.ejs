@@ -14,25 +14,27 @@
   <p>Current second:
     <%= seconds %>
   </p>
-    
-      <% if (seconds % 2==0) { %>
-  <ul>
-    <% items.forEach(element => { %>
-     <li><%= element %></li>
-    <% }) %>
- 
-  </ul>
-  <% } else { %>
-   
-  
-  <p>No items to display</p>
-  <%  }%>
-  <p>
-    <%= htmlContent %>
-  </p>
+
+  <% if (seconds % 2==0) { %>
+    <ul>
+      <% items.forEach(element=> { %>
+        <li>
+          <%= element %>
+        </li>
+        <% }) %>
+
+    </ul>
+    <% } else { %>
 
 
-  <%- include('footer') %>
+      <p>No items to display</p>
+      <% }%>
+        <p>
+          <%= htmlContent %>
+        </p>
+
+
+        <%- include('footer') %>
 </body>
 
 </html>
