@@ -9,12 +9,10 @@
 
 <body>
   <h1>
-    <!-- Tite goes here -->
     <%= title %>
   </h1>
   <p>Current second:
     <%= seconds %>
-    <!-- Current second goes here -->
   </p>
     
       <% if (seconds % 2==0) { %>
@@ -22,9 +20,7 @@
     <% items.forEach(element => { %>
      <li><%= element %></li>
     <% }) %>
-    <!-- List goes here if current second is even. -->
-    <!-- Otherwise it should display the following: -->
-    <!-- <p>No items to display</p> -->
+ 
   </ul>
   <% } else { %>
    
@@ -32,11 +28,9 @@
   <p>No items to display</p>
   <%  }%>
   <p>
-    <!-- HTML content goes here -->
     <%= htmlContent %>
   </p>
 
-  <!-- Footer goes here -->
 
   <%- include('footer') %>
 </body>
